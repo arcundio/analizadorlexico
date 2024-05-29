@@ -25,6 +25,11 @@ palabrasTipoDato = ["ent32", "ent64", "dec", "cadena", "car"]
 letras = [chr(i) for i in range(97, 123)] + [chr(i) for i in range(65, 91)] + ["ñ", "Ñ"]
 numeros = [str(i) for i in range(10)]
 simbolos = ["$", "_", ""]
+palabrasClases = ["clase", "interface", "publico", "privado", "estatico"]
+palabrasTipoDato = ["ent32", "ent64", "dec", "cadena", "car"]
+letras = [chr(i) for i in range(97, 123)] + [chr(i) for i in range(65, 91)] + ["ñ", "Ñ"]
+numeros = [str(i) for i in range(10)]
+simbolos = ["$", "_", ""]
 
 token = (
     opAritmeticos
@@ -39,6 +44,7 @@ token = (
     + palabrasBucle
     + palabrasClases
     + palabrasDecision
+    + palabrasTipoDato
     + palabrasTipoDato
     + letras
     + numeros
